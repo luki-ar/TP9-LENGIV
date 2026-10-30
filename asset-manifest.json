@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TP9-LENGIV/static/css/main.3a913732.css",
+    "main.js": "/TP9-LENGIV/static/js/main.242f1666.js",
+    "index.html": "/TP9-LENGIV/index.html",
+    "main.3a913732.css.map": "/TP9-LENGIV/static/css/main.3a913732.css.map",
+    "main.242f1666.js.map": "/TP9-LENGIV/static/js/main.242f1666.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a913732.css",
+    "static/js/main.242f1666.js"
+  ]
+}
