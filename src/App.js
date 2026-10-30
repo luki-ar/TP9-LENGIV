@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header";
+import Inicio from "./components/Inicio";
+import AcercaDeNosotros from "./components/AcercaDeNosotros";
+import Reservas from "./components/Reservas";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/acerca" element={<AcercaDeNosotros />} />
+        <Route path="/reservas" element={<Reservas />} />
+      </Routes>
+
+      <footer className="footer">
+        <h2>LOS ÁLAMOS</h2>
+        <p>Un lugar para descansar y disfrutar.</p>
+      </footer>
+    </BrowserRouter>
   );
 }
 
